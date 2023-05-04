@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+h1
+{
+    font: 32px 'acumin-pro';
+    text-decoration: none;
+    color: black;
+}
+/*navigation bar*/
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 24px;
+}
+.header .title
+{
+    text-align: center;
+}
+.title
+{
+    font-size: 32px;
+    font-weight: 300;
+}
+.socials
+{
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+.socials .icons
+{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+.directions
+{
+    text-align: center;
+    margin: 60px;
+    font-size: 20px;
+}
+#bottom
+{
+    margin: 0px 24px;
+}
+/*first section*/
+.conatiner
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.cards img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+}
