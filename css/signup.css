@@ -1,0 +1,48 @@
+form h1
+{
+    text-align: center;
+}
+form
+{
+    width: 400px;
+    background-color: #E7ECEF;
+    border-radius: 25px;
+    margin: 58px auto;
+    padding: 25px;
+}
+.field
+{
+    width: 90%;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+::placeholder
+{
+    font-style: italic;
+    opacity: 50px;
+}
+form a
+{
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+}
+button
+{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    margin: 20px auto;
+    transition-duration: 0.5s;
+}
+button:hover
+{
+    background-color: rgb(81, 76, 76);
+    cursor: pointer;
+}

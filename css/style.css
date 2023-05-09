@@ -20,16 +20,20 @@ h1
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .header .title
 {
     text-align: center;
 }
+nav a:active, nav a:focus, nav a:hover
+{
+    text-decoration: underline;
+}
 .title
 {
     font-size: 32px;
-    font-weight: 300;
+    font-weight: 500;
 }
 .socials
 {
@@ -46,11 +50,23 @@ h1
 {
     text-align: center;
     margin: 60px;
-    font-size: 20px;
+    font-size: 16px;
 }
 #bottom
 {
     margin: 0px 24px;
+    border-left: solid 1px;
+    padding-left: 20px;
+    border-right: solid 1px;
+    padding-right: 20px;
+}
+.line
+{
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 /*first section*/
 .conatiner
