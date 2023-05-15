@@ -40,7 +40,7 @@ nav a:active, nav a:focus, nav a:hover
     justify-content: flex-end;
     padding-right: 80px;
 }
-.socials .icons
+.icons
 {
     width: 20px;
     height: 20px;
@@ -69,15 +69,42 @@ nav a:active, nav a:focus, nav a:hover
     margin-bottom: 50px;
 }
 /*first section*/
-.conatiner
+main .product-container
 {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex: wrap;
+}
+.cards
+{
+    border-radius: 20px;
+    gap: 30px 30px;
 }
 .cards img
 {
     width: 300px;
     height: 300px;
     border-radius: 20px 20px 0 0;
+}
+/*Tops*/
+.tops-container img
+{
+    width: 300px;
+    height: 350px;
+    margin: 0 0;
+    border-radius: 20px 20px 0 0;
+}
+.tops-container
+{
+    width: 1260px;
+    height: 1260px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+/*Footer*/
+footer .logo img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
 }
