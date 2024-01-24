@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import path, include
 from pages.views import home, shop, faq_view
 from product.views import product_detail
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path("", home, name="home"),
     path("shop/", shop, name="shop"),
@@ -25,4 +28,4 @@ urlpatterns = [
     path('product_detail/<slug:slug>', product_detail, name='product'),
     path('faq/', faq_view, name='faq'),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
