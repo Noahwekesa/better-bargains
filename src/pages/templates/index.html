@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="flex flex-col justify-center items-center">
+  <div class="text-5xl p-6 mt-4  mb-0 font-bold">
+    BETTER BARGAINS
+
+</div>
+<p class="lead fw-normal text-white-50 mb-0">shop in style</p>
+
+<div class="max-w-6xl mx-auto py-2 px-6 xl:px-0">
+    <div class="products flex items-center flex-wrap">
+{% for product in products %}
+{% include "partials/product_list_item.html" %}
+{% endfor %}
+
+  </div>
+</div>
+{% endblock %}
