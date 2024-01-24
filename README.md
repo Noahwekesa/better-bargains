@@ -1,5 +1,6 @@
 # Brenyo Better Bargains Thrift Store
 
+<img href="screenshot/better.png">
 - This is a simple ecommerce website for <a href="https://www.instagram.com/brenyo_better_bargains/">Brenyo's Better Bargains Thrift Store</a> (Instagram Account).
 - This project aims to create a user-friendly and visually appealing thrift store where users can browse and purchase items.
 
