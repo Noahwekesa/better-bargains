@@ -5,14 +5,17 @@
     BETTER BARGAINS
 
 </div>
-<p class="lead fw-normal text-white-50 mb-0">shop in style</p>
+<p class="lead italic fw-medium text-white-50 mb-0">shop in style</p>
 
 <div class="max-w-6xl mx-auto py-2 px-6 mt-20 xl:px-0">
     <div class="products  flex items-center flex-wrap">
 {% for product in products %}
 {% include "partials/product_list_item.html" %}
 {% endfor %}
-
   </div>
+<div>
+  free delivery
+  </div>
+
 </div>
 {% endblock %}

@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
+from .cart import Cart
 
 
 def add_to_cart(request, product_id):
     cart = Cart(request)
     cart.add(product_id)
 
-    return render(request, 'cart/partials/menu_cart.html')
+    return render(request, 'partials/menu_cart.html')
 
 
 def cart(request):
@@ -40,7 +41,7 @@ def update_cart(request, product_id, action):
                 'get_thumbnail': product.get_thumbnail(),
                 'price': product.price,
             },
-            'total_price': (quantity * product.price) / 100,
+            'total_price': quantity * product.price,
             'quantity': quantity,
         }
     else:
