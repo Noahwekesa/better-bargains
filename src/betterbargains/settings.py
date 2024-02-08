@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(66v8hxejgkp9@o!wt^r5xtyb%tem+3r1l91@7ey^c&efmg&ps
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 SESSION_COOKIE_AGE = 86400
 CART_SESSION_ID = 'cart'
