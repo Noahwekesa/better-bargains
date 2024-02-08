@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'betterbargains.wsgi.application'
+WSGI_APPLICATION = 'betterbargains.wsgi.app'
 
 
 # Database
