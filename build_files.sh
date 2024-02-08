@@ -1,4 +1,4 @@
 # build_files.sh
 pip install -r requirements.txt
-cd "$(src "$0")" # Change to the directory of the script
+cd "$(dirname "$0")/src"
 python3.9 manage.py collectstatic
