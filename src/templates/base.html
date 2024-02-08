@@ -5,16 +5,26 @@
   <title></title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://unpkg.com/htmx.org@1.7.0"></script>
+  <script src="https://unpkg.com/htmx.org@1.7.0"></script>
 </head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+  body {
+    background-color: #fefefe;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  }
+</style>
 
 <body>
-  {% include 'navbar.html' %}
-  {% block content %}
-  {% endblock %}
-  {% include "footer.html" %}
+  {% include 'navbar.html' %} {% block content %} {% endblock %} {% include "footer.html" %}
 </body>
 
 </html>

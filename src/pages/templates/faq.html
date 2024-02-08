@@ -1,19 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
-{% include "navbar.html" %}
-<div class="container">
+<div class="flex flex-col justify-center  items-center">
   <h1 class="text-5xl font-bold">FAQ</h1>
 
   <h3>General Questions</h3>
-
+<div class="m-5">
   <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
     <div class="collapse-title text-xl font-medium">
-      Focus me to see content
+    1. How To Order
     </div>
     <div class="collapse-content">
-      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+      <ul>
+    <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Dm the item</li>
+    <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Pay on delivery option available only in nairobi. Delivery fees is dependent on location.</li>
+    <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Pick up option available in Nairobi CBD</li>
+      </ul>
     </div>
   </div>
 
+ <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+    <div class="collapse-title text-xl font-medium">
+    2. Can i Reserve an item?
+    </div>
+    <div class="collapse-content">
+      <ul>
+    <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Dm the item</li>
+    <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Then pay 50% To our till number</li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
 </div>
 {% endblock content %}

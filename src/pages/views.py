@@ -32,3 +32,6 @@ def shop(request):
 
 def faq_view(request):
     return render(request, "faq.html")
+
+def about_view(request):
+    return render(request, "about.html")

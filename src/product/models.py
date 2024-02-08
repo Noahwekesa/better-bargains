@@ -3,7 +3,7 @@ from django.core.files import File
 from product.consts import CATEGORY
 from io import BytesIO
 from PIL import Image
-
+from django_extensions.db.fields import AutoSlugField
 
 class Category(models.Model):
     name = models.CharField(max_length=24, choices=CATEGORY)
@@ -20,7 +20,7 @@ class Product(models.Model):
         related_name='products',
         on_delete=models.CASCADE)
     name = models.CharField(max_length=24)
-    slug = models.SlugField()
+    slug = AutoSlugField(populate_from='name')
     description = models.TextField(blank=True, null=True)
     price = models.PositiveIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)

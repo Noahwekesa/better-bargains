@@ -1,19 +1,52 @@
+{% load static %}
+<div class="flex flex-row items-center justify-center gap-9 pt-5">
+
+<div class="flex flex-row items-center">
+      <svg
+        class="w-6 h-6 text-gray-800"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+        />
+      </svg>
+      <a href="tel:+254740118782" class="text-xl hover:underline">+254 740 118 782</a>
+    </div>
+
+    <a
+      class="hover:underline text-xl"
+      href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F254740118782%3Ftext%3DHello%252C%2BAm%2Binterested%2Bin%2Bone%2Bof%2Byour%2Bproducts&e=AT1BF0tYzAxkm_rftvd46Dj5jD9chGPpGNlDEnmBncBC7dY6eCYlCJ5cCIrO_2oG66AkpXRpeZiy3NvdXfP-Jh5Pi6THbPCB4TrfpA"
+    >
+      Whatsapp
+    </a>
+
+</div>
+</div>
 <nav class="mt-4">
   <div
     class="max-w-6xl mx-auto py-2 px-6 xl:px-0 flex items-center justify-between"
   >
     <div class="menu-left flex items-center space-x-6">
-      <a
-        class="py-4 text-lg font-semibold hidden lg:flex"
-        href="{% url 'home' %}"
-        >BrenyoBetterBargains</a
-      >
+      <a class="py-4 text-lg font-semibold lg:flex" href="{% url 'home' %}">
+        <img
+          class="w-10 h-10 rounded-full"
+          src="{% static 'images/logo.jpg' %}"
+          alt="Brenyo Better Bargains"
+        />
+      </a>
     </div>
     <div class="menu-right flex items-center space-x-4">
       <ul class="flex items-center space-x-4">
         <li><a class="hover:underline" href="{% url 'shop' %}">Shop</a></li>
-        <li><a class="hover:underline" href="#">FAQ</a></li>
-        <li><a class="hover:underline" href="#">About</a></li>
+        <li><a class="hover:underline" href="{% url 'faq' %}">FAQ</a></li>
+        <li><a class="hover:underline" href="{% url 'about' %}">About</a></li>
         <li>
           <a
             class="hover:underline"
