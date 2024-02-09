@@ -2,7 +2,7 @@
 #
 # build_files.sh
 pip install -r requirements.txt -y
-
+pip install django-dotenv
 cd "$(dirname "$0")"
 
 cd "src"
