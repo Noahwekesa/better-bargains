@@ -86,15 +86,10 @@ WSGI_APPLICATION = 'betterbargains.wsgi.app'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-  'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'better_bargains',
-    'USER': 'noahw3k3sa',
-    'PASSWORD': 'YbHLOE7a1zsS',
-    'HOST': 'ep-long-union-26868320.us-east-2.aws.neon.tech',
-    'PORT': '5432',
-    'OPTIONS': {'sslmode': 'require'},
-  }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
