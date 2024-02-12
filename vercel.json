@@ -19,7 +19,7 @@
       "dest": "static/$1"
     },
     {
-      "src": "/(.*)",
+      "src": "src/(.*)",
       "dest": "betterbargains/wsgi.py"
     }
   ]
