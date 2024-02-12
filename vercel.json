@@ -1,14 +1,26 @@
 {
   "builds": [
     {
-      "src": "betterbargains/wsgi.py",
-      "use": "@vercel/python"
+      "src": "src/betterbargains/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles_build"
+      }
     }
   ],
   "routes": [
     {
+      "src": "src/static/(.*)",
+      "dest": "src/static/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "betterbargains/wsgi.py"
+      "dest": "src/betterbargains/wsgi.py"
     }
   ]
 }
