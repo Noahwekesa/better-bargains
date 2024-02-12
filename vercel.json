@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "betterbargains/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "betterbargains/wsgi.py"
+    }
+  ]
+}
