@@ -13,6 +13,7 @@ pillow==10.2.0
 psycopg2-binary==2.9.9
 pycparser==2.21
 python-decouple==3.8
+python-dotenv==1.0.1
 requests==2.31.0
 soupsieve==2.5
 sqlparse==0.4.4
