@@ -7,6 +7,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("", include("pages.urls")),
+    path("", include("product.urls")),
     # all auth
     path("accounts/", include("allauth.urls")),
     path("cart/", include("cart.urls")),
