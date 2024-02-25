@@ -1,5 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
+
+# from django.contrib.auth.models import User
 
 from product.models import Product
 
@@ -12,8 +14,11 @@ class Order(models.Model):
     STATUS_CHOICES = ((ORDERED, "ordered"), (SHIPPED, "shipped"))
 
     user = models.ForeignKey(
-        User, related_name="orders", blank=True, null=True, on_delete=models.CASCADE
+        settings.AUTH_USER_MODEL, blank=True, null=True, on_delete=models.CASCADE
     )
+    # user = models.ForeignKey(
+    #     User, related_name="orders", blank=True, null=True, on_delete=models.CASCADE
+    # )
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     email = models.EmailField()
