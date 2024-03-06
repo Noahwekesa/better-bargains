@@ -26,6 +26,9 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     thumbnail = models.ImageField(upload_to="uploads/", blank=True, null=True)
 
+    class Meta:
+        ordering = ("-created_at",)
+
     def __str__(self):
         return f"{self.name}"
 
