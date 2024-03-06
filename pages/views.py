@@ -1,12 +1,12 @@
-from django.db.models import Q
 from django.shortcuts import render
-
 from product.models import Category, Product
 
 
 def home(request):
     products = Product.objects.all()[0:8]
-    context = {"products": products}
+    context = {
+        "products": products,
+    }
     return render(request, "index.html", context)
 
 
